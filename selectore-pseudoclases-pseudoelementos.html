@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!--Con holver cuando pasas el mouse por encima se activa PSEUDOCLASE (:)-->
+<!--Con nth-child() podemos elegir el parrafo que queremos modificar PSEUDOCLASE (:)-->
+<!--Con first-letter podemos cambiar el color de la primera letra de un parrafo PSEUDOELEMENTO (::)-->
+<!--Con before podemos escribir algo antes del parrafo PESUDOELEMENTO (::)-->
+<!--Con after podemos escribir algo despues del parrafo PESUDOELEMENTO (::)-->
+<!--placeholder sirve para poner un texto dentro del input PSEUDOELEMENTO (::)-->
+
+    <style>
+        p{
+            color: salmon;
+        }
+        P::first-letter{
+            color: teal;
+        }
+        P::before{
+            content: "<3";
+        }
+        p::after{
+           content: "<3"; 
+        }
+       p:hover{
+            color: skyblue;
+       } 
+       div p:nth-child(2){
+        color: violet;
+       }
+       div p:nth-child(3){
+        color: black;
+       }
+       input::placeholder{
+        color: tomato;
+       }
+    </style>
+</head>
+
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
