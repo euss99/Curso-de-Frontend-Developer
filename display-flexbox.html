@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--justify-content lo que hace es mover el texto, imagen, etc en el eje horizontal-->
+<!--align-items lo que hace es mover el texto, imagen, etc en el eje vertical-->
+<!--flex-direction nos permite cambiar el eje de la pagina-->
+    <style>
+        .container{
+            display: flex;
+            background: papayawhip;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            flex-direction:column;
+        }
+        .item{
+           display: flex;
+            width: 50px;
+           height: 50px;
+           background: purple;
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+        }
+        .container .item:nth-child(2n+1){
+            background: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Te</div>
+        <div class="item">amo</div>
+        <div class="item">mucho</div>
+        <div class="item">Joaly</div>
+    </div>
+</body>
+</html>
